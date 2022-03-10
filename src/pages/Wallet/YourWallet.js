@@ -2,7 +2,8 @@ import React from "react";
 import { caret, searchIcon } from "../Homepage/Header";
 import { eur, gbp, usd } from "../Homepage/WalletInfo";
 import { SingleWal, YourWalletCont } from "./wallet.styles";
-
+import { RiSendPlaneFill } from "react-icons/ri";
+import { CgArrowsExchangeAlt, CgArrowBottomLeft } from "react-icons/cg";
 export const YourWallet = () => {
   const cardDetails = [
     {
@@ -67,7 +68,67 @@ export const YourWallet = () => {
             ))}
           </div>
         </div>
-        <div className="wallet-sideb">side b</div>
+        <div className="wallet-sideb">
+          <div className="top-sideb">
+            <div>
+              <p className="status">
+                <div className="dot"> </div> Active
+              </p>
+              <p>EUR Wallet</p>
+              <p className="currency">EUR</p>
+            </div>
+            <h3>€2,000,000.50</h3>
+          </div>
+
+          <div className="balances">
+            <div>
+              <p>
+                <span>Ledger Balance</span> 2,000,000.50{" "}
+              </p>
+
+              <p>
+                <span>Blocked Balance</span> €0.0
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>Total Incoming</span> €2,000,000.50
+              </p>
+
+              <p>
+                <span>Total Outgoing</span> €5,000,000.50
+              </p>
+            </div>
+          </div>
+
+          <div className="buttons">
+            <button>
+              <RiSendPlaneFill /> Payment
+            </button>
+
+            <button>
+              <CgArrowBottomLeft /> Payment
+            </button>
+
+            <button>
+              <CgArrowsExchangeAlt /> Exchange
+            </button>
+          </div>
+
+          <div className="more">
+            <p>More Options {caret}</p>
+          </div>
+
+          <div className="tabs">
+            <p>Activity</p>
+            <p>Transactions </p>
+            <p>Invoices</p>
+          </div>
+
+          <div className="chart">
+            <p>Month {caret}</p>
+          </div>
+        </div>
       </div>
     </YourWalletCont>
   );
