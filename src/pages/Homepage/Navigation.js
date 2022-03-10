@@ -68,7 +68,7 @@ const Navigation = () => {
         position: "sticky",
         top: "0",
       }}
-      width="22%"
+      width="21%"
       breakPoint="md"
       onToggle={handleToggleSidebar}
       collapsed={toggled}

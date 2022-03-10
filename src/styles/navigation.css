@@ -3,7 +3,7 @@
     color: white !important;
     /* height:100vh; */
     margin-top:0;
-    padding: 0 1.5rem;
+    /* padding: 0 1rem; */
 
   }
   .pro-sidebar {
@@ -17,6 +17,9 @@
   .pro-sidebar-header {
     margin-bottom: 2rem !important;
     border-bottom: none !important;
+    /* padding-left:1.2rem; */
+    width:90%;
+    margin:auto;
   }
   /* .pro-sidebar-header img {
     margin: auto !important;
@@ -26,8 +29,8 @@
   .pro-menu-item {
     font-size: 16px !important;
   font-weight: 500 !important;
-  width: 90%;
-  margin: auto !important;
+  width: 80%;
+  margin: auto  !important;
   padding: 14px 14px 14px 17px;
     list-style-type: none;
     display: flex !important;
@@ -57,7 +60,8 @@
   }
   .pro-sidebar-footer {
     bottom: 0 !important;
-    width: 100%;
+    width:90%;
+    margin:auto;
     border-top: none !important;
     margin-top: 6rem;
     padding-bottom: 4rem;
